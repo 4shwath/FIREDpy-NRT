@@ -15,7 +15,7 @@ In the first stage of the project, we focused on answering two questions:
 
 Below, I will explain how I approached each question. To run the scripts in this repository, you should create a conda environment using the `environment.yml` file. Follow the instructions provided [here](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) to do so.
 
-### Q1. BERDF Correction
+### Q1. BRDF Correction
 The flowchart below demonstrates the steps I took to answer the first question, with the caveat that I only tested BRDF on Sentinel-2 images (using the Sen2nbar package) since I couldn't find any Python implementation of this correction for Landsat images.
 
 <img src="./images/Flowchart.jpg" width=800>
