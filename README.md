@@ -5,7 +5,7 @@
 Project funded by NASA Applied Sciences Program and developed by ESOC and Earth Lab, CIRES - CU Boulder
 
 
-## First Stage (Summer 2023)
+## Signal evaluation first stage (Summer 2023)
 ### Done by [Behzad Vahedi](mailto:behzad@colorado.edu)
 
 Our project aims to extend EarthLab’s "Fire Event Delineation for Python (FIREDpy)" library by updating it for Near-Real-Time (NRT) fire event perimeter mapping through the fusion of optical and radar remote sensing data. Our main motivations are to achieve closer-to-real-time temporal resolution and improve the FIREDpy outputs' spatial resolution. 
