@@ -27,15 +27,15 @@ class Config():
         # [credential_sentinel]
 
         # Copernicus Data Space Ecosystem username and password
-        self.username_sentinel = "ashwathram99@gmail.com"
-        self.password_sentinel = "Redrocket99#"
+        self.username_sentinel = "<username>"
+        self.password_sentinel = "<password>"
         self.access_token = get_access_token(self.username_sentinel, self.password_sentinel)
 
         # [credential_landsat]
 
         # Landsat username and password
-        self.username_landsat = "ashwathram99@gmail.com"
-        self.password_landsat = "Redrocket99#"
+        self.username_landsat = "<username>"
+        self.password_landsat = "<password>"
 
         # USE LINE BELOW FOR MORE SAFETY
         #self.access_token = get_access_token(getpass.getpass("Enter CDSE username: "), getpass.getpass("Enter CDSE password: "))
