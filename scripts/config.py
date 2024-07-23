@@ -37,9 +37,6 @@ class Config():
         self.username_landsat = "<username>"
         self.password_landsat = "<password>"
 
-        # USE LINE BELOW FOR MORE SAFETY
-        #self.access_token = get_access_token(getpass.getpass("Enter CDSE username: "), getpass.getpass("Enter CDSE password: "))
-
         # [params]
         self.max_cloud_cover = 10
         self.delta_days_landsat = 70
