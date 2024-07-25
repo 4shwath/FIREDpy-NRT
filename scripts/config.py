@@ -34,8 +34,8 @@ class Config():
         # [credential_landsat]
 
         # Landsat username and password
-        self.username_landsat = "ashwathram99@gmail.com"
-        self.password_landsat = "Redrocket99#"
+        self.username_landsat = "<username>"
+        self.password_landsat = "<password>"
 
         # [params]
         self.max_cloud_cover = 10
@@ -49,8 +49,7 @@ class Config():
         self.save_footprints = False
         self.update_json = False
         # [directory]
-        #self.data_dir = '/home/aramakrishnan/Documents/Firedpy/'
-        self.data_dir = '/Bhaltos/ASHWATH/optical_data_NoCloudMask_4Ryan/SAFE_files/'
+        self.data_dir = "<Set directory with .SAFE files>"
         # self.data_dir = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'data')) # ("../data/") 
 
         if os.name == 'nt':  # Windows
