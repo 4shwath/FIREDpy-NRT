@@ -147,7 +147,7 @@ lum_change_dir = '/Bhaltos/ASHWATH/SAR_data_formatted_v2/lum_change'
 binary_product_dir = '/Bhaltos/ASHWATH/SAR_data_formatted_v2/binary_products'
 coh_change_dir = '/Bhaltos/ASHWATH/SAR_data_formatted_v2/coh_change'
 dnbr_dir = '/Bhaltos/ASHWATH/Dataset/dNBR'
-csv_file_path = '/Bhaltos/ASHWATH/metadata.csv'
+csv_file_path = '/Bhaltos/ASHWATH/metadata_v2.csv'
 
 # Find matching files
 matches, no_match_reasons = find_matching_files(lum_change_dir, binary_product_dir, coh_change_dir, dnbr_dir)

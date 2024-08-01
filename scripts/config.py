@@ -1,6 +1,5 @@
 import os
 import requests
-import getpass
 
 def get_access_token(username: str, password: str) -> str:
     data = {
@@ -27,30 +26,27 @@ class Config():
         # [credential_sentinel]
 
         # Copernicus Data Space Ecosystem username and password
-        self.username_sentinel = "<username>"
-        self.password_sentinel = "<password>"
+        self.username_sentinel = "ashwathram99@gmail.com"
+        self.password_sentinel = "Redrocket99#"
         self.access_token = get_access_token(self.username_sentinel, self.password_sentinel)
 
         # [credential_landsat]
 
         # Landsat username and password
-        self.username_landsat = "<username>"
-        self.password_landsat = "<password>"
+        self.username_landsat = "ashwathram99@gmail.com"
+        self.password_landsat = "Redrocket99#"
 
         # [params]
         self.max_cloud_cover = 10
-        self.delta_days_landsat = 70
+        self.delta_days_landsat = 70    # delta_days refers to the number of days to include before and after a fire period
         self.delta_days_sentinel = 40
-        # Sentinel-2: S2MSI2A,S2MSI1C, S2MS2Ap
         self.producttype_sentinel = "S2MSI2A"
 
         # whether to download the scenes or not
         self.download_scenes = True
-        self.save_footprints = False
-        self.update_json = False
         # [directory]
-        self.data_dir = "<Set directory with .SAFE files>"
-        # self.data_dir = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'data')) # ("../data/") 
+        self.shp_file = '/home/aramakrishnan/Documents/Firedpy/Fire_events/selected_events.shp' # Fire event data will be read from this input file
+        self.data_dir = '/home/aramakrishnan/Documents/Firedpy/Fire_events'     # SAFE files will be downloaded into this output directory
 
         if os.name == 'nt':  # Windows
             self.dir_sep = '\\'

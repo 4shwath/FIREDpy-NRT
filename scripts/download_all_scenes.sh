@@ -1,13 +1,12 @@
 #!/bin/bash
 
 # Define your list of fire IDs
-#fire_ids=(9844 11862 12887 202 280 5072 5532 7123 25993 47422 2282 2614 4413 5587 5615 5950 2819 5447 7792 8676)
-fire_ids=(2614, 7792, 2282, 5615)
+fire_ids=(9844 11862 12887 202 280 5072 5532 7123 25993 47422 2282 2614 4413 5587 5615 5950 2819 5447 7792 8676)
 
-# Iterate through the first five fire IDs
-for ((i=0; i<20; i++))
+# Iterate through the array of fire IDs. Can also change '${#fire_ids[@]}' to a number to iterate through the first 5 fire ids for example.
+for ((i=0; i<${#fire_ids[@]}; i++))
 do
-    # Retry up to 3 times for sentinel download if the script fails
+    # Retries up to 3 times for sentinel download if the download fails
     retries=0
     while [ $retries -lt 3 ]
     do
@@ -23,7 +22,7 @@ do
         echo "Failed to execute after 3 attempts, moving to the next fire ID."
     fi
 
-    # Retry up to 3 times for landsat download if the script fails
+    # Retries up to 3 times for landsat download if the download fails
     retries=0
     while [ $retries -lt 3 ]
     do

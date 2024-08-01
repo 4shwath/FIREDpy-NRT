@@ -174,9 +174,8 @@ def read_prediction(file_path):
         
         return da
 
-# Main execution
 if __name__ == "__main__":
-    # Set up parameters
+    # Set file paths and output directory
     checkpoint_path = '/path/to/your/checkpoint.pt'
     new_data_csv = '/path/to/new/dataset.csv'
     output_dir = '/path/to/output/directory'
